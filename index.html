@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shortest Path Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shortest Path Simulator</h1>
+  <p class="sub">DAA Project: BFS vs Dijkstra vs A*</p>
+
+  <div class="controls">
+    <label>Algorithm
+      <select id="algo">
+        <option value="astar">A* Search</option>
+        <option value="dijkstra">Dijkstra</option>
+        <option value="bfs">BFS</option>
+      </select>
+    </label>
+    <label>Draw mode
+      <select id="mode">
+        <option value="wall">Draw walls</option>
+        <option value="start">Place start</option>
+        <option value="end">Place end</option>
+      </select>
+    </label>
+    <label>Speed
+      <input type="range" id="speed" min="1" max="50" value="20">
+    </label>
+    <button id="run">Run</button>
+    <button id="maze">Random walls</button>
+    <button id="clearPath">Clear path</button>
+    <button id="reset">Reset all</button>
+  </div>
+
+  <div class="stats">
+    Visited cells: <b id="visited">0</b> |
+    Path length: <b id="plen">0</b> |
+    Time: <b id="time">0</b> ms
+  </div>
+
+  <div id="grid"></div>
+
+  <div class="legend">
+    <span class="box start"></span>Start
+    <span class="box end"></span>End
+    <span class="box wall"></span>Wall
+    <span class="box visited"></span>Visited
+    <span class="box path"></span>Shortest path
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

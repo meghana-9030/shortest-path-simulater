@@ -1,0 +1,18 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #f4f6fb; margin: 0; padding: 16px; }
+h1 { margin: 8px 0 0; }
+.sub { color: #666; margin-top: 4px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 14px 0; }
+.controls label { font-size: 14px; display: flex; align-items: center; gap: 6px; }
+button { padding: 7px 14px; border: none; border-radius: 6px; background: #3b5bdb; color: #fff; cursor: pointer; }
+button:hover { background: #2f4ac0; }
+.stats { margin-bottom: 12px; }
+#grid { display: grid; gap: 1px; background: #cfd6e4; width: max-content; margin: 0 auto; border: 1px solid #cfd6e4; user-select: none; }
+.cell { width: 24px; height: 24px; background: #fff; }
+.wall { background: #2b2d42; }
+.start { background: #2f9e44; }
+.end { background: #e03131; }
+.visited { background: #a5d8ff; transition: background .3s; }
+.path { background: #ffd43b; }
+.legend { margin-top: 14px; font-size: 14px; }
+.box { display: inline-block; width: 14px; height: 14px; margin: 0 4px 0 14px; vertical-align: middle; border: 1px solid #aaa; }
+@media (max-width: 600px) { .cell { width: 14px; height: 14px; } }
